@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+#vcs.xml
+**/.idea/
+**/cmake-build-debug
+**/CMakeLists.txt
+
