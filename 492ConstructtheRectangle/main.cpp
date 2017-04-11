@@ -3,8 +3,8 @@
 #include <string>
 
 using namespace std;
-/*
-#define N 1000
+
+#define N 10000
 
 void f(int n) {
     int a[N];
@@ -31,10 +31,10 @@ void f(int n) {
 
 int main() {
     //std::cout << "Hello, World!" << std::endl;
-    f(10);
+    f(1000);
     return 0;
 }
- */
+
 
 /*
 #include<iostream>
@@ -144,37 +144,37 @@ int main(){
 //    printf("%d\n",(sum-dp[sum/2]));
 //    return 0;
 //}
-#include <math.h>
-class Solution {
-public:
-    vector<int> constructRectangle(int area) {
-        int max = (int) ceil(sqrt(area));
-        vector<int> ret;
-        for(int i = max;i>0;i--){
-            //double a = i;
-            if(area%i ==0 ){
-                int a = i;
-                int b = area/a;
-                int m1 = a > b ? a: b;
-                int m2 = a < b ? a: b;
-                ret.push_back(m1);
-                ret.push_back(m2);
-                return ret;
-            }
-        }
-        return ret;
-
-    }
-};
-
-void tranverseVector(vector<int> v){
-    for(int i = 0;i<v.size();i++){
-        cout << v[i] << endl;
-    }
-}
-
-int main(){
-    Solution s = Solution();
-    //cout << s.constructRectangle(4) <<endl;
-    tranverseVector(s.constructRectangle(100));
-}
+//#include <math.h>
+//class Solution {
+//public:
+//    vector<int> constructRectangle(int area) {
+//        int max = (int) ceil(sqrt(area));
+//        vector<int> ret;
+//        for(int i = max;i>0;i--){
+//            //double a = i;
+//            if(area%i ==0 ){
+//                int a = i;
+//                int b = area/a;
+//                int m1 = a > b ? a: b;
+//                int m2 = a < b ? a: b;
+//                ret.push_back(m1);
+//                ret.push_back(m2);
+//                return ret;
+//            }
+//        }
+//        return ret;
+//
+//    }
+//};
+//
+//void tranverseVector(vector<int> v){
+//    for(int i = 0;i<v.size();i++){
+//        cout << v[i] << endl;
+//    }
+//}
+//
+//int main(){
+//    Solution s = Solution();
+//    //cout << s.constructRectangle(4) <<endl;
+//    tranverseVector(s.constructRectangle(100));
+//}
